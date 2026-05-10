@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <!-- Character encoding and viewport -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO and Meta Tags -->
+  <title>متجر مناديل ريفال وياقوت | جودة فاخرة</title>
+  <meta name="description" content="متجر مناديل ريفال وياقوت - جودة فاخرة بالجملة والتجزئة مع توصيل لجميع أنحاء المملكة العربية السعودية">
+  <meta name="keywords" content="مناديل, ريفال, ياقوت, متجر, جملة, تجزئة, المملكة">
+  <meta name="author" content="Tissues Store">
+  <meta name="theme-color" content="#0D1520">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="متجر مناديل ريفال وياقوت">
+  <meta property="og:description" content="جودة فاخرة بالجملة والتجزئة">
+  <meta property="og:url" content="https://your-domain.com">
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+  
+  <!-- CSS Variables and Main Styles -->
+  <style>
+    :root {
+      --color-gold: #B8860B;
+      --color-gold-light: #F5D87A;
+      --color-gold-lighter: #FFF5CC;
+      --color-blue: #074A7C;
+      --color-blue-light: #80B0FF;
+      --color-blue-lighter: #D0E4FF;
+      --color-green: #0D6E4A;
+      --color-green-light: #52B788;
+      --color-green-lighter: #CCFFE8;
+      --color-bg-dark: #0D1520;
+      --color-text-primary: #FAF6EE;
+      --color-text-secondary: rgba(250, 246, 238, 0.38);
+      --color-text-tertiary: rgba(250, 246, 238, 0.18);
+      --color-border: rgba(250, 246, 238, 0.07);
+      --color-whatsapp: #25D366;
+      --color-whatsapp-dark: #1ebe5d;
+      --transition-main: all 0.3s ease;
+      --transition-smooth: 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    /* Reset and Base Styles */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Cairo', sans-serif;
+      background: var(--color-bg-dark);
+      color: var(--color-text-primary);
+      min-height: 100vh;
+      padding: 40px 20px 60px;
+      line-height: 1.6;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: 
+        radial-gradient(ellipse 70% 50% at 10% 15%, rgba(184, 134, 11, 0.07) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 60% at 90% 85%, rgba(13, 110, 74, 0.07) 0%, transparent 60%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Layout */
+    .page {
+      position: relative;
+      z-index: 1;
+      max-width: 1160px;
+      margin: 0 auto;
+    }
+
+    /* Header Section */
+    .store-header {
+      text-align: center;
+      margin-bottom: 64px;
+      animation: fadeDown 0.8s ease both;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+      background: linear-gradient(90deg, var(--color-gold), var(--color-gold-light), var(--color-gold));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .store-title {
+      font-size: clamp(28px, 5vw, 52px);
+      font-weight: 900;
+      color: var(--color-text-primary);
+      margin-bottom: 10px;
+      line-height: 1.2;
+    }
+
+    .store-sub {
+      color: var(--color-text-secondary);
+      font-size: 14px;
+      letter-spacing: 1.5px;
+    }
+
+    .hline {
+      width: 80px;
+      height: 2px;
+      margin: 22px auto 0;
+      background: linear-gradient(
+        90deg,
+        transparent,
+        var(--color-gold),
+        var(--color-gold-light),
+        var(--color-gold),
+        transparent
+      );
+    }
+
+    /* WhatsApp Float Button */
+    .wa-float {
+      position: fixed;
+      bottom: 24px;
+      left: 24px;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--color-whatsapp);
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+      transition: var(--transition-main);
+      animation: pulse 2s infinite;
+      border: none;
+      cursor: pointer;
+    }
+
+    .wa-float:hover,
+    .wa-float:focus {
+      background: var(--color-whatsapp-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(37, 211, 102, 0.5);
+      outline: 2px solid rgba(37, 211, 102, 0.3);
+      outline-offset: 2px;
+    }
+
+    .wa-float svg {
+      width: 22px;
+      height: 22px;
+      fill: #fff;
+      flex-shrink: 0;
+    }
+
+    @keyframes pulse {
+      0%,
+      100% {
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+      }
+      50% {
+        box-shadow: 0 4px 30px rgba(37, 211, 102, 0.7);
+      }
+    }
+
+    /* Brand Section */
+    .brand-section {
+      margin-bottom: 72px;
+    }
+
+    .bdiv {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+
+    .bdiv-line {
+      flex: 1;
+      height: 1px;
+      background: rgba(250, 246, 238, 0.08);
+    }
+
+    .bdiv-text {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 4px;
+      padding: 6px 20px;
+      border-radius: 2px;
+      border: 1px solid;
+      white-space: nowrap;
+    }
+
+    .reval .bdiv-text {
+      color: var(--color-gold);
+      border-color: rgba(184, 134, 11, 0.35);
+    }
+
+    .yaqut .bdiv-text {
+      color: var(--color-green-light);
+      border-color: rgba(82, 183, 136, 0.35);
+    }
+
+    /* Cards Grid */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 26px;
+      padding: 0;
+      list-style: none;
+    }
+
+    /* Card Styles */
+    .card {
+      border-radius: 20px;
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+      animation: fadeUp 0.7s ease both;
+      transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card:hover {
+      transform: translateY(-9px);
+    }
+
+    .card:focus-within {
+      outline: 2px solid var(--color-gold-light);
+      outline-offset: 2px;
+    }
+
+    /* Card Color Variants */
+    .cg {
+      background: linear-gradient(150deg, #1A1404, #221A06, #161003);
+      border: 1px solid rgba(184, 134, 11, 0.22);
+      box-shadow: 0 8px 40px rgba(184, 134, 11, 0.08);
+    }
+
+    .cg:hover {
+      box-shadow: 0 22px 60px rgba(184, 134, 11, 0.24);
+    }
+
+    .cb {
+      background: linear-gradient(150deg, #07091A, #0D1328, #060818);
+      border: 1px solid rgba(74, 122, 204, 0.22);
+      box-shadow: 0 8px 40px rgba(26, 58, 143, 0.12);
+    }
+
+    .cb:hover {
+      box-shadow: 0 22px 60px rgba(74, 122, 204, 0.28);
+    }
+
+    .cgr {
+      background: linear-gradient(150deg, #051210, #0A1E18, #040E0C);
+      border: 1px solid rgba(82, 183, 136, 0.22);
+      box-shadow: 0 8px 40px rgba(13, 110, 74, 0.1);
+    }
+
+    .cgr:hover {
+      box-shadow: 0 22px 60px rgba(82, 183, 136, 0.24);
+    }
+
+    /* Image Container */
+    .img-wrap {
+      position: relative;
+      overflow: hidden;
+      height: 360px;
+      background: rgba(0, 0, 0, 0.1);
+    }
+
+    .img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      transition: transform 0.6s var(--transition-smooth);
+    }
+
+    .card:hover .img-wrap img {
+      transform: scale(1.05);
+    }
+
+    .img-grad {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
+
+    .cg .img-grad {
+      background: linear-gradient(
+        180deg,
+        rgba(26, 20, 4, 0.02) 0%,
+        transparent 30%,
+        rgba(26, 20, 4, 0.96) 100%
+      );
+    }
+
+    .cb .img-grad {
+      background: linear-gradient(
+        180deg,
+        rgba(7, 9, 26, 0.02) 0%,
+        transparent 30%,
+        rgba(7, 9, 26, 0.96) 100%
+      );
+    }
+
+    .cgr .img-grad {
+      background: linear-gradient(
+        180deg,
+        rgba(5, 18, 16, 0.02) 0%,
+        transparent 30%,
+        rgba(5, 18, 16, 0.96) 100%
+      );
+    }
+
+    /* Badge */
+    .badge {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      padding: 5px 13px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 700;
+      backdrop-filter: blur(10px);
+      z-index: 10;
+    }
+
+    .cg .badge {
+      background: rgba(184, 134, 11, 0.88);
+      color: var(--color-gold-lighter);
+    }
+
+    .cb .badge {
+      background: rgba(26, 58, 143, 0.88);
+      color: var(--color-blue-lighter);
+    }
+
+    .cgr .badge {
+      background: rgba(13, 110, 74, 0.88);
+      color: var(--color-green-lighter);
+    }
+
+    /* Bubble / Price Circle */
+    .bubble {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(12px);
+      z-index: 10;
+    }
+
+    .cg .bubble {
+      background: rgba(184, 134, 11, 0.18);
+      border: 1px solid rgba(245, 216, 122, 0.3);
+    }
+
+    .cb .bubble {
+      background: rgba(26, 58, 143, 0.22);
+      border: 1px solid rgba(74, 122, 204, 0.32);
+    }
+
+    .cgr .bubble {
+      background: rgba(13, 110, 74, 0.22);
+      border: 1px solid rgba(82, 183, 136, 0.32);
+    }
+
+    .bn {
+      font-size: 14px;
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .bl {
+      font-size: 7px;
+      font-weight: 600;
+      opacity: 0.75;
+      margin-top: 2px;
+    }
+
+    .cg .bn,
+    .cg .bl {
+      color: var(--color-gold-light);
+    }
+
+    .cb .bn,
+    .cb .bl {
+      color: var(--color-blue-light);
+    }
+
+    .cgr .bn,
+    .cgr .bl {
+      color: var(--color-green-light);
+    }
+
+    /* Card Body */
+    .card-body {
+      padding: 20px 22px 24px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .bname {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      opacity: 0.5;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+    }
+
+    .cg .bname {
+      color: var(--color-gold-light);
+    }
+
+    .cb .bname {
+      color: var(--color-blue-light);
+    }
+
+    .cgr .bname {
+      color: var(--color-green-light);
+    }
+
+    .pname {
+      font-size: 20px;
+      font-weight: 900;
+      color: var(--color-text-primary);
+      line-height: 1.25;
+      margin-bottom: 6px;
+    }
+
+    .pdesc {
+      font-size: 12px;
+      color: rgba(250, 246, 238, 0.4);
+      line-height: 1.7;
+      margin-bottom: 14px;
+    }
+
+    /* Product Specs */
+    .specs {
+      display: flex;
+      gap: 7px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+    }
+
+    .chip {
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 600;
+      border: 1px solid;
+      white-space: nowrap;
+    }
+
+    .cg .chip {
+      background: rgba(184, 134, 11, 0.1);
+      color: var(--color-gold);
+      border-color: rgba(184, 134, 11, 0.22);
+    }
+
+    .cb .chip {
+      background: rgba(26, 58, 143, 0.18);
+      color: var(--color-blue-light);
+      border-color: rgba(74, 122, 204, 0.28);
+    }
+
+    .cgr .chip {
+      background: rgba(13, 110, 74, 0.18);
+      color: var(--color-green-light);
+      border-color: rgba(82, 183, 136, 0.28);
+    }
+
+    /* Price Section */
+    .price-section {
+      padding-top: 14px;
+      border-top: 1px solid var(--color-border);
+      margin-top: auto;
+    }
+
+    .price-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      gap: 10px;
+    }
+
+    .price-lbl {
+      font-size: 10px;
+      color: rgba(250, 246, 238, 0.3);
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 3px;
+    }
+
+    .price-big {
+      font-size: 38px;
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .price-sar {
+      font-size: 14px;
+      font-weight: 500;
+      opacity: 0.7;
+      margin-right: 3px;
+    }
+
+    .cg .price-big {
+      color: var(--color-gold-light);
+    }
+
+    .cb .price-big {
+      color: var(--color-blue-light);
+    }
+
+    .cgr .price-big {
+      color: var(--color-green-light);
+    }
+
+    .tax-pill {
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 11px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .cg .tax-pill {
+      background: rgba(184, 134, 11, 0.12);
+      color: var(--color-gold);
+      border: 1px solid rgba(184, 134, 11, 0.22);
+    }
+
+    .cb .tax-pill {
+      background: rgba(26, 58, 143, 0.18);
+      color: var(--color-blue-light);
+      border: 1px solid rgba(74, 122, 204, 0.25);
+    }
+
+    .cgr .tax-pill {
+      background: rgba(13, 110, 74, 0.18);
+      color: var(--color-green-light);
+      border: 1px solid rgba(82, 183, 136, 0.25);
+    }
+
+    .price-breakdown {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .breakdown-chip {
+      flex: 1;
+      padding: 7px 10px;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    .cg .breakdown-chip {
+      background: rgba(184, 134, 11, 0.07);
+      color: rgba(245, 216, 122, 0.6);
+      border: 1px solid rgba(184, 134, 11, 0.12);
+    }
+
+    .cb .breakdown-chip {
+      background: rgba(26, 58, 143, 0.1);
+      color: rgba(128, 176, 255, 0.6);
+      border: 1px solid rgba(74, 122, 204, 0.15);
+    }
+
+    .cgr .breakdown-chip {
+      background: rgba(13, 110, 74, 0.1);
+      color: rgba(82, 183, 136, 0.6);
+      border: 1px solid rgba(82, 183, 136, 0.15);
+    }
+
+    /* WhatsApp Button */
+    .btn-wa {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      padding: 13px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-family: 'Cairo', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      background: var(--color-whatsapp);
+      color: #fff;
+      transition: var(--transition-main);
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-wa:hover,
+    .btn-wa:focus {
+      background: var(--color-whatsapp-dark);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
+      outline: 2px solid rgba(37, 211, 102, 0.3);
+      outline-offset: 2px;
+    }
+
+    .btn-wa svg {
+      width: 18px;
+      height: 18px;
+      fill: #fff;
+      flex-shrink: 0;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      margin-top: 70px;
+      padding-top: 28px;
+      border-top: var(--color-border) 1px solid;
+      color: var(--color-text-tertiary);
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
+
+    /* Animations */
+    @keyframes fadeDown {
+      from {
+        opacity: 0;
+        transform: translateY(-22px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(28px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .card:nth-child(1) {
+      animation-delay: 0.05s;
+    }
+
+    .card:nth-child(2) {
+      animation-delay: 0.15s;
+    }
+
+    .card:nth-child(3) {
+      animation-delay: 0.25s;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      body {
+        padding: 20px 15px 60px;
+      }
+
+      .store-header {
+        margin-bottom: 48px;
+      }
+
+      .cards-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .store-title {
+        font-size: clamp(24px, 4vw, 36px);
+      }
+
+      .wa-float {
+        bottom: 20px;
+        left: 20px;
+        padding: 10px 16px;
+        font-size: 12px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- WhatsApp Floating Button -->
+  <a class="wa-float" href="https://wa.me/966579672269?text=أهلاً، أريد الاستفسار عن منتجاتكم" 
+     title="تواصل معنا عبر واتس آب" aria-label="اتصل بنا عبر WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a6.963 6.963 0 00-6.951 6.959 6.962 6.962 0 006.959 6.962c1.92 0 3.719-.518 5.271-1.41l.05-.032 3.571.929-.946-3.426.031-.05a6.956 6.956 0 001.466-4.27 6.961 6.961 0 00-6.959-6.962h.004zm5.768 13.886l-1.439-.46c-1.414.905-3.059 1.432-4.814 1.432-4.269 0-7.739-3.469-7.739-7.738 0-4.27 3.47-7.738 7.738-7.738 4.27 0 7.738 3.469 7.738 7.738 0 1.881-.636 3.61-1.697 5.011z"/>
+    </svg>
+    <span>تواصل معنا</span>
+  </a>
+
+  <!-- Main Content -->
+  <main class="page">
+    <!-- Header -->
+    <header class="store-header">
+      <div class="eyebrow">TISSUES STORE • متجر المناديل</div>
+      <h1 class="store-title">مناديل ريفال وياقوت</h1>
+      <p class="store-sub">جودة فاخرة &nbsp;•&nbsp; بالجملة والتجزئة &nbsp;•&nbsp; توصيل للمملكة</p>
+      <div class="hline"></div>
+    </header>
+
+    <!-- Reval Section -->
+    <section class="brand-section reval" aria-labelledby="reval-heading">
+      <h2 id="reval-heading" class="bdiv">
+        <div class="bdiv-line"></div>
+        <span class="bdiv-text">Reval • ريفال</span>
+        <div class="bdiv-line"></div>
+      </h2>
+      
+      <ul class="cards-grid" role="list">
+        <!-- Product Card 1 -->
+        <li class="card cg" role="article">
+          <div class="img-wrap">
+            <img 
+              src="https://via.placeholder.com/400x360?text=Reval+Product" 
+              alt="منتج مناديل ريفال"
+              loading="lazy"
+              width="400"
+              height="360">
+            <div class="img-grad"></div>
+          </div>
+          <div class="bubble" aria-hidden="true">
+            <span class="bn">120</span>
+            <span class="bl">صفحة</span>
+          </div>
+          <span class="badge">خاص</span>
+          
+          <div class="card-body">
+            <p class="bname">Reval</p>
+            <h3 class="pname">مناديل ريفال فاخرة</h3>
+            <p class="pdesc">منتج عالي الجودة يجمع بين الفخامة والنعومة</p>
+            
+            <div class="specs">
+              <span class="chip">4 طبقات</span>
+              <span class="chip">ناعم</span>
+              <span class="chip">صحي</span>
+            </div>
+
+            <div class="price-section">
+              <div class="price-top">
+                <div>
+                  <p class="price-lbl">السعر</p>
+                  <div>
+                    <span class="price-sar">ر.س</span>
+                    <span class="price-big">45</span>
+                  </div>
+                </div>
+                <span class="tax-pill">شامل الضريبة</span>
+              </div>
+
+              <div class="price-breakdown">
+                <span class="breakdown-chip">سعر الوحدة: 45 ر.س</span>
+              </div>
+
+              <a href="https://wa.me/966579672269?text=أريد شراء مناديل ريفال 120 صفحة" 
+                 class="btn-wa"
+                 title="اطلب الآن عبر واتس آب">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a6.963 6.963 0 00-6.951 6.959 6.962 6.962 0 006.959 6.962 6.96 6.96 0 005.271-1.41l.05-.032 3.571.929-.946-3.426.031-.05a6.956 6.956 0 001.466-4.27 6.961 6.961 0 00-6.959-6.962h.004z"/>
+                </svg>
+                <span>اطلب الآن</span>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <!-- Add more product cards following the same structure -->
+      </ul>
+    </section>
+
+    <!-- Yaqut Section -->
+    <section class="brand-section yaqut" aria-labelledby="yaqut-heading">
+      <h2 id="yaqut-heading" class="bdiv">
+        <div class="bdiv-line"></div>
+        <span class="bdiv-text">Yaqut • ياقوت</span>
+        <div class="bdiv-line"></div>
+      </h2>
+      
+      <ul class="cards-grid" role="list">
+        <!-- Product Card Template (repeat as needed) -->
+        <li class="card cgr" role="article">
+          <div class="img-wrap">
+            <img 
+              src="https://via.placeholder.com/400x360?text=Yaqut+Product" 
+              alt="منتج مناديل ياقوت"
+              loading="lazy"
+              width="400"
+              height="360">
+            <div class="img-grad"></div>
+          </div>
+          <div class="bubble" aria-hidden="true">
+            <span class="bn">150</span>
+            <span class="bl">صفحة</span>
+          </div>
+          <span class="badge">جديد</span>
+          
+          <div class="card-body">
+            <p class="bname">Yaqut</p>
+            <h3 class="pname">مناديل ياقوت برميوم</h3>
+            <p class="pdesc">جودة عالية مع ملمس حريري ناعم جداً</p>
+            
+            <div class="specs">
+              <span class="chip">5 طبقات</span>
+              <span class="chip">حريري</span>
+              <span class="chip">برميوم</span>
+            </div>
+
+            <div class="price-section">
+              <div class="price-top">
+                <div>
+                  <p class="price-lbl">السعر</p>
+                  <div>
+                    <span class="price-sar">ر.س</span>
+                    <span class="price-big">65</span>
+                  </div>
+                </div>
+                <span class="tax-pill">شامل الضريبة</span>
+              </div>
+
+              <div class="price-breakdown">
+                <span class="breakdown-chip">سعر الوحدة: 65 ر.س</span>
+              </div>
+
+              <a href="https://wa.me/966579672269?text=أريد شراء مناديل ياقوت 150 صفحة" 
+                 class="btn-wa"
+                 title="اطلب الآن عبر واتس آب">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a6.963 6.963 0 00-6.951 6.959 6.962 6.962 0 006.959 6.962 6.96 6.96 0 005.271-1.41l.05-.032 3.571.929-.946-3.426.031-.05a6.956 6.956 0 001.466-4.27 6.961 6.961 0 00-6.959-6.962h.004z"/>
+                </svg>
+                <span>اطلب الآن</span>
+              </a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 متجر مناديل ريفال وياقوت. جميع الحقوق محفوظة.</p>
+  </footer>
+</body>
+
+</html>
